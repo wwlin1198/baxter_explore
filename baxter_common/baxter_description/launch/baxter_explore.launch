@@ -1,0 +1,9 @@
+<launch>
+  
+  <include file="$(find baxter_moveit_config)/launch/baxter_grippers.launch"/>
+      <remap from="joint_states" to="robot/joint_states"/> 
+  
+  <node name="joint_trajectory_action_server" pkg="baxter_interface" type="joint_trajectory_action_server.py" respawn="true" output="screen">
+  </node>
+
+</launch>

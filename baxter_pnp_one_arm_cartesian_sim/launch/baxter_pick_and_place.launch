@@ -1,0 +1,11 @@
+<launch>
+
+
+  
+  <include file="$(find baxter_moveit_config)/launch/baxter_grippers.launch"/>
+      <remap from="joint_states" to="robot/joint_states"/> 
+
+
+  <!-- <node pkg="baxter_pnp_one_arm_cartesian_sim" type="baxter_pnp.py" name="pnp" output="screen"/> -->
+
+</launch>
